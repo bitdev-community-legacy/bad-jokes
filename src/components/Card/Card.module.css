@@ -1,0 +1,30 @@
+.card {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: solid 7px #41403E;
+    padding: 25px;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    transition: box-shadow 0.5s;
+  }
+  
+  .card:hover {
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+  }
+
+  .fullWidth{
+      width: 100%;
+  }
+
+  .md{
+      width: 500px;
+  }
+
+  @media screen and (max-width: 600px){
+    .md{
+        width: 80vw;
+    }
+  }  
+
+  .sm{
+      width: 200px;
+  }
+

@@ -1,0 +1,32 @@
+.app_bar{
+    display: block;
+    border-radius: 0 0 225px 15px/0 0 15px 255px;
+    border-bottom: solid 3px #41403E;
+    border-left: solid rgba(0,0,0,0);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.app_bar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.app_bar li {
+    display: inline;
+}
+
+.app_bar li a {
+    text-decoration: unset;
+    color: #000;
+}
+
+.app_bar li a * {
+    margin-right: 35px;
+}
+
+.app_bar li a *:hover {
+    color: #ab3636;
+} 
