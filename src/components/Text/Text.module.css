@@ -14,11 +14,18 @@
     font-size: 34px;
 }
 
-
 .md {
     font-size: 23px;
 }
 
 .sm {
     font-size: 16px;
+}
+
+.regular {
+    color: #000;
+}
+
+.muted {
+    color: rgb(88, 88, 88)
 }

@@ -4,7 +4,7 @@
     border-bottom: solid 3px #41403E;
     border-left: solid rgba(0,0,0,0);
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 26px;
     padding-top: 10px;
     padding-bottom: 5px;
 }
@@ -29,4 +29,14 @@
 
 .app_bar li a *:hover {
     color: #ab3636;
-} 
+}
+
+.app_bar .logo {
+    float: right;
+}
+
+@media screen and (max-width: 680px) {
+    .app_bar .logo {
+        display: none;
+    }
+}
