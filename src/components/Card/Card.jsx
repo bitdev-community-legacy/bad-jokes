@@ -22,7 +22,7 @@ Card.propTypes = {
     /** the card's width */
     size: PropTypes.oneOf(['fullWidth','md', 'sm']),
     /** the card's content */
-    children: any
+    children: PropTypes.any
 }
 
 export default Card;
