@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import Text from '../Text';
 import styles from './AppBar.module.css';
-
 export default class AppBar extends Component {
 
     static Item = ({path, children}) => {
         return <li><a href={path}><Text size='lg'>{`[${children}]`}</Text></a></li>
     }
+        
 
     static Logo = ({children}) => {
         return (
@@ -28,13 +28,7 @@ export default class AppBar extends Component {
     }
 }
 
-
-
-AppBar.Item.propTypes = {
-    /** Menu items (each with 'path' and 'name') */
-    items: PropTypes.shape({
-        path: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired
-    })
+AppBar.propTypes = {
+    /** a menu item or a logo (see example) */
+    children : PropTypes.node
 }
-

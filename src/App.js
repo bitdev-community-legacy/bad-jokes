@@ -5,13 +5,11 @@ import smile from './smile.png';
 import Text from './components/Text'
 import BadJokesViewer from './components/BadJokesViewer';
 
-// const menuItems = [{path: 'javascript:alert("No point in that.")', name: 'Login'}, {path: '/', name: 'Blog'}]
-
 function App() {
   return (
     <div className={styles.app}>
         <AppBar>
-          <AppBar.Item path="/">Login</AppBar.Item>
+          <AppBar.Item path="javascript:alert('No point in that...');">Login</AppBar.Item>
           <AppBar.Item path="/">Blog</AppBar.Item>
           <AppBar.Logo>
             <Text size="lg">BadJokes </Text>
