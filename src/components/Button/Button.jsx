@@ -5,7 +5,7 @@ import styles from './button.module.scss'
 
 export interface IButton extends  ButtonHTMLAttributes<HTMLButtonElement> {
     /** Choose between primary and secondary styling. */
-    variant : 'primary' | 'secondary';
+    variant?: 'primary' | 'secondary';
 }
 
 
