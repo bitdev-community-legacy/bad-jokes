@@ -3,7 +3,7 @@ import cs from 'classnames'
 import styles from './button.module.scss'
 
 
-export interface IButton extends  ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
     /** Choose between primary and secondary styling. */
     variant?: 'primary' | 'secondary';
 }
