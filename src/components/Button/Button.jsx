@@ -1,25 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-import styles from './Button.module.css';
+import React, {ButtonHTMLAttributes} from 'react'
+import cs from 'classnames'
+import styles from './button.module.scss'
 
-const Button = ({disabled, children, onClickMethod, ...rest}) => {
+
+export interface IButton extends  ButtonHTMLAttributes<HTMLButtonElement> {
+    /** Choose between primary and secondary styling. */
+    variant : 'primary' | 'secondary';
+}
+
+
+export const Button = ({children, variant='primary', ...rest} : IButton) => {
     return (
-        <button disabled={disabled} className={styles.button} onClick={onClickMethod} {...rest}>
+        <button className={cs(styles.base, styles[variant])} {...rest}>
             {children}
         </button>
     )
 }
-
-Button.defaultProps = {
-    disabled: false
-  };
-
-Button.propTypes = {
-    disabled : PropTypes.bool,
-    /** the button label */
-    children: PropTypes.any.isRequired,
-    /** a function that handles the onClick event */
-    onClickMethod: PropTypes.func
-}
-
-  export default Button;
