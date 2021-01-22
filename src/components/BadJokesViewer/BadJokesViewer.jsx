@@ -37,7 +37,7 @@ const BadJokesViewer = () => {
                     </Text>
                 </div>
                 <div>
-                    <Button disabld={isLoading} onClickMethod={getJoke} name="the_name">another one, please</Button>
+                    <Button disabled={isLoading} onClickMethod={getJoke} name="the_name">another one, please</Button>
                 </div>
             </Card>
         </div>
